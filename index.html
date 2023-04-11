@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q1 empty arry
+        document.write("<h3>"+"Q1 EMPTY ARRY"+"</h3>")
+ var multiarry=[[],[]]
+document.write(multiarry)
+
+     //Q2 matrix
+     document.write("<h3>"+"Q2 MATRIX"+"</h3>")
+     var matrixarry=[
+        [1,0,1],
+        
+        [0,1,0],
+        
+        [0,0,0]
+        
+     ]
+     document.write(matrixarry)
+
+     
+
+     //Q3 counting
+     document.write("<h3>"+"Q3 1 TO 10 COUNTING"+"</h3>")
+     for(i=0;i<=10;i++){
+        document.write(i+"<br>")
+     }
+
+     //Q4 table loop
+
+     document.write("<h3>"+"Q4 TABLE LOOP"+"</h3>")
+    var tableloop=parseInt(prompt("TABLE OF "))
+    var lengloop=parseInt(prompt("table of length"))
+    for(i=1;i<=lengloop;i++){
+        document.write(tableloop+" x "+i+" = "+tableloop*i+"<BR>")
+    }
+
+    //Q5 fruit loop
+    document.write("<h3>"+"Q5 FRUITS LOOP"+"</h3>")
+    var fruitloop=["banana","mango","apple","orange","grapes"]
+    document.write(fruitloop+"<br>")
+    for(i=0;i<fruitloop.length;i++){
+        document.write("index of "+i+" is "+fruitloop[i]+"<br>")
+    }
+
+    //Q6 multiply counting
+    document.write("<h3>"+"Q6 MULTIPLE COUNTING"+"</h3>"+"<BR>"+"<BR>")
+
+    var countloop=parseInt(prompt("number of counting"))
+    document.write("<H3>"+"COUNTING"+"</H3>"+"<br>")
+    for(i=1;i<=countloop;i++){
+        document.write(i+" ")
+        
+    }
+    document.write("<H3>"+"REVERSE COUNTING"+"</H3>"+"<br>")
+    for(i=countloop;i>=1;i--){
+        document.write(i+" ")
+        
+    }
+    document.write("<H3>"+"EVEN COUNTING"+"</H3>"+"<br>")
+    for(i=0;i<=countloop;i+=2){
+            document.write(i+" ")}
+            document.write("<H3>"+"ODD COUNTING"+"</H3>"+"<br>")
+    for(i=1;i<=countloop;i+=2){
+        
+            document.write(i+" ")}
+
+            document.write("<H3>"+"SERIES COUNTING"+"</H3>"+"<br>")
+    for(i=2;i<=countloop;i+=2){
+            document.write(i+"K"+" ")}
+
+            //Q7 bakery
+            
+            var bakeryloop=["cake","pie","biscuit","chips","patties","mangojam",]
+        var idbakery=bakeryloop.indexOf(prompt("Hi Sir \nWelcome To A.k Bakery\nWHAT DO YOU WANT ORDER?"))
+        
+        if(idbakery==-1){
+            alert("sorry sir your item is not available.")
+            // var bakeryloop2=["cake","pie","biscuit","chips","patties","mangojam",]
+            var idbakery2=bakeryloop.indexOf(prompt("Plz another order if you want?"))
+            if(idbakery2>=0&&idbakery2<=5){
+                alert(bakeryloop[idbakery2]+" is ready to "+idbakery2 +" index of our bakery" )
+            }
+            else(alert("Sorry Sir your order is not available\nhave a nice day sir"))
+        }
+        else if(idbakery>=0&&idbakery<=5){
+            alert(bakeryloop[idbakery]+" is ready to "+idbakery +" index of our bakery" )
+        }
+
+//Q8 9 largest number & smallest number
+document.write("<h3>Q8 the largest number</h3>"+"<br>")
+var A=[12,34,56,74,1,09]
+document.write(A+"<br>")
+maxnum=A[0]
+
+for(i=0;i<A.length;i++){
+if(A[i]>maxnum)
+maxnum=A[i]
+}
+document.write("the largest number of arry "+maxnum+"<br>")
+
+
+
+document.write("<h3>Q9 the smallest number</h3>"+"<br>")
+var A=[12,34,56,74,2,09]
+document.write(A+"<br>")
+minnum=A[0]
+
+for(i=0;i<A.length;i++){
+if(A[i]<minnum)
+minnum=A[i]
+}
+document.write("the smallest number of arry "+minnum+"<br>")
+
+//Q10  5 ranging 100
+document.write("<h3>Q10 the ranging number</h3>"+"<br>")
+for (let i = 1; i <= 100; i++) {
+  if (i % 5 === 0) {
+    document.write(i+",");
+  }
+}
+
+    </script>
+</body>
+</html>
